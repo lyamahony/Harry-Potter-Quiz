@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>HP Quiz</title>
+</head>
+<body>
+    <div class="container">
+        <header class="text-center">
+            <h1 class="title" id="title">Harry Potter Quiz</h1>
+            <p class="description text-center" id="description">Hi, let us know what you think about the best saga ever.</p>
+        </header>
+    
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input class="form-control" id="name" type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label  id="email-label" for="email">Email</label>
+            <input class="form-control" id="email" type="email" placeholder="Enter your Email" required>
+        </div>
+         <div class="form-group">
+            <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+        <input class="form-control" id="number" type="number" placeholder="Age" min="10" max="99">
+         </div>
+        <div class="form-group">
+        <label>In your opinion, what's the best HP Book?</label>
+        <select class="form-control" id="dropdown" name="role" required>
+        <option>Select a book</option>
+        <option>Harry Potter y la piedra filosofal</option>
+        <option>Harry Potter y la camara secreta</option>
+        <option>Harry Potter y el prisionero de azkaban</option>
+        <option>Harry Potter y el caliz de fuego</option>
+        <option>Harry Potter y la orden del fenix</option>
+        <option>Harry Potter y las reliquias de la muerte</option>
+        <select>
+        </div>
+            <div class="form-group">
+                <p>Did you know about the new HP's game?</p>
+                <label>
+                  <input
+                    name="user-recommend"
+                    value="yes"
+                    type="radio"
+                    class="input-radio"
+                  />Yes</label
+                >
+                <label>
+                  <input
+                    name="user-recommend"
+                    value="no"
+                    type="radio"
+                    class="input-radio"
+                  />No</label
+                >
+                <label
+                  ><input
+                    name="user-recommend"
+                    value="i-dunno"
+                    type="radio"
+                    class="input-radio"
+                  />I dunno</label
+                >
+              </div>
+
+          <div class="form-group">
+              <p>What is your Hogwart's House?</p>
+              <select id="most-like" name="mostLike"class="form-control" required>
+                <option disabled selected value>Select an option</option>
+                <option value="challenges">Gryffindor</option>
+                <option value="projects">Slytherin</option>
+                <option value="community">Hufflepuff</option>
+                <option value="openSource">Ravenclaw</option>
+              </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What are the best characters of the saga? (for you)
+          </p>
+          <label
+                ><input
+                  name="prefer"
+                  value="front-end-projects"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Fred Weasly</label>
+          <label>
+                <input
+                  name="prefer"
+                  value="back-end-projects"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Hermione Granger</label>
+          <label
+                ><input
+                  name="prefer"
+                  value="data-visualization"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Harry Potter</label>
+          <label
+                ><input
+                  name="prefer"
+                  value="challenges"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Severus Snape</label>
+          <label
+                ><input
+                  name="prefer"
+                  value="open-source-community"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Ron Weasly</label>
+          <label
+                ><input
+                  name="prefer"
+                  value="gitter-help-rooms"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Albus Dumbledure</label>
+          <label
+                ><input
+                  name="prefer"
+                  value="videos"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Tom Riddle</label>
+          <label
+                ><input
+                  name="prefer"
+                  value="city-meetups"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Neville Longbottom</label>
+          <label
+                ><input
+                  name="prefer"
+                  value="wiki"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Luna Lovegood</label>
+          <label
+                ><input
+                  name="prefer"
+                  value="forum"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Sirius Black</label>
+        </div>
+
+        <div class="form-group">
+          <p>If you have any comment about HP type it down here</p>
+          <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Enter your comment here..."
+              ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+                Submit
+              </button>
+        </div>
+      </form>
+    </div>
+    <footer>
+        <p id="my-name">Lya Mahony</p>
+    </footer>
+</body>
+</html>
